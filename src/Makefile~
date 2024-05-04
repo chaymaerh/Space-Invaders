@@ -1,0 +1,21 @@
+#
+# Makefile pour le jeu spaceinvader
+#
+TARGET= spaceinvader
+CFLAGS=-g -W -Wall -Wextra
+
+default: $(TARGET)
+
+.c.o:
+    gcc $(CFLAGS) -c $<
+
+$(TARGET): main.o inout.o
+    gcc $(LDFLAGS) $^ -o $@
+
+.PHONY: clean
+clean:
+    rm -f *.o
+    rm -f $(TARGET)
+
+
+
