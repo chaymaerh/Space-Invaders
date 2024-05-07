@@ -5,9 +5,11 @@ In Space Invaders, the player controls a spaceship located at the bottom of the 
 
 <h3 align="left">To launch the game</h3>
 
-cd src
-make
-./spaceinvader
+```
+$ cd src
+$ make
+$ ./spaceinvader
+```
 
 <h3 align="left">Keys to play</h3>
 
